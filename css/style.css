@@ -1,0 +1,718 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Almarai", sans-serif;
+    color: white;
+    height:100vh;
+    margin:0;
+}
+a {
+    text-decoration: none;
+}
+.my_signature {
+    color: #fff;
+    font-family: 'Damion', cursive;
+    display: block;
+    width: fit-content;
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.2;
+    letter-spacing: 2px;
+    margin: 30px auto 0;
+    transition: transform 0.3s ease;
+}
+.my_signature:hover{
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    opacity: 1;
+}
+.my_signature:visited {
+    text-decoration: none;
+}
+.container {
+    padding: 20px 30px 100px;
+    margin: 0 auto 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .image {
+    width: 100px;
+}
+@media  (max-width: 425px)  {
+    header .image {
+        width: 80px;
+    }
+}
+header .image img {
+    opacity: 0.85;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+/* End Global Rules */
+/* ============================ Signin Page ================================================= */
+body.signin-page {
+    background-image: radial-gradient(circle at 67% 83%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22, 176, 207),rgb(103, 7, 215));
+}
+.sign-card {
+    max-width: 500px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px;
+    margin: 25px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: slideUpFade 0.6s ease-out;
+}
+.sign-card h1, .sign-card p{
+    user-select: none;
+}
+.sign-card p:last-of-type{
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+@media  (max-width: 400px)  {
+    .sign-card h1{
+        font-size: 24px;
+    }
+    .sign-card p {
+        font-size: 12px;
+    }
+}
+.sign-card form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sign-card form .idfield{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #f0f4fd;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.sign-card form .idfield i{
+    font-size: 20px;
+    padding-left: 10px;
+    color: #808080;
+    margin-left: 10px;
+    border-left: 2px solid ;
+}
+.sign-card form .idfield input{
+    border: none;
+    background-color: inherit;
+    height: 100%;
+    padding: 10px 0;
+    outline: none;
+    color: #6d6d6d;
+    font-weight: 600;
+}
+@media  (max-width: 375px)  {
+    .sign-card form .idfield{
+        max-width: 90%;
+        font-size: 14px;
+    }
+    .sign-card form .idfield input{
+    max-width: 80%;
+    }
+}
+.sign-card form button{
+    color: #fcfcfe;
+    font-weight: 700;
+    border: none;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-image: linear-gradient(to right, #5C258D 0%, #4389A2 51%, #5C258D 100%);
+    margin: 20px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    outline: none;
+}
+.sign-card form button:hover {
+  background-position: right center;
+  color: #fff;
+}
+/* تأثير النقر  */
+.sign-card form button:active{ 
+    transform: translateY(3px) scale(0.96);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    -webkit-transform: translateY(3px) scale(0.96);
+    -moz-transform: translateY(3px) scale(0.96);
+    -ms-transform: translateY(3px) scale(0.96);
+    -o-transform: translateY(3px) scale(0.96);
+}
+.views {
+    position: absolute;
+    user-select: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    left: 10px;
+    bottom: 10px;
+    padding: 0 10px;
+    color: #f3f4f8;
+    background-color: #f0f4fd33;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.views span{
+    margin-right: 5px;
+    padding: 10px 0;
+}
+@media  (max-width: 425px)  {
+    .views {
+        bottom: 5px;
+        left: 5px;
+    }
+    .views span {
+        padding: 7px 0;
+    }
+}
+/* ============================ Result Page ================================================= */
+.result-page .my_signature {
+    color: #000000;
+    
+}
+body.result-page {
+    color: black;
+    background-color: #f1f1f9;
+}
+.result-page  header{
+    user-select: none;
+    background-color: #f5f6f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.result-page  header .image {
+    width: 60px;
+}
+.result-page  header .colleage-details h3{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.result-page  header .colleage-details p{
+    font-size: 14px;
+}
+.result-page  header .colleage-details p:first-of-type{
+    margin-bottom: 5px;
+}
+@media  (max-width: 425px)  {
+    .result-page  header{
+        padding: 10px 15px ;
+    }
+    .result-page  header .colleage-details h3{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .result-page  header .colleage-details p{
+        font-size: 12px;
+    }
+}
+.result-page  .student-info{
+    background-color: #f5f6f8;
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    box-shadow:    0 2px 6px rgba(0,0,0,0.05),    0 10px 25px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.result-page  .student-info h4{
+    margin-bottom: 5px;
+}
+@media  (max-width: 375px) {
+    .result-page  .student-info h4 {
+        font-size: 14px;
+    }
+    .result-page  .student-info h5 {
+        font-size: 12px;
+    }
+}
+.result-page  .student-info .academic_average{
+    /* لون الخلفية يتغير من جافاسكريبت حسب النسبة*/
+    background-color: #d6fae6; /* لون افتراضي */
+    position: relative;
+    margin: 10px auto;
+    padding: 15px 10px;
+    max-width: 250px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.result-page  .student-info .academic_average > span{
+    /* اللون يتغير من جافاسكريبت حسب النسبة */
+    color: #238623; /* لون افتراضي */
+    font-size: 32px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.result-page  .student-info .academic_average p{
+    text-align: right;
+    font-size: 14px;
+}
+.result-page  .student-info .academic_average p:last-of-type {
+    margin-top: 5px;
+}
+@media (max-width: 425px) {
+    .result-page  .student-info .academic_average > span{
+    font-size: 28px;
+    }
+}
+@media (min-width: 475px) {
+    .result-page  .subjects-grades {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media (min-width: 612px) {
+    .result-page  .subjects-grades {
+        max-width: 600px;
+    }
+}
+/* تنسيقات الوان المعدل العام*/
+/* لون المعدل العالي */
+.result-page  .student-info .academic_average.high-average {
+    background-color: #d6fae6;
+}
+.result-page  .student-info .academic_average.high-average > span{
+    color: #238623;
+}
+/* لون االمعدل المتوسط */
+.result-page  .student-info .academic_average.medium-average {
+    background-color: #f4f6d5; 
+}
+.result-page  .student-info .academic_average.medium-average > span{
+    color: #747e35;
+}
+/* لون االمعدل المنخفض */
+.result-page  .student-info .academic_average.low-average {
+    background-color: #fad6d6; 
+}
+.result-page  .student-info .academic_average.low-average > span{
+    color: #862323;
+}
+/* نهاية تنسيقات الوان المعدل العام*/
+.result-page  .subjects-grades .subject{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px ;
+    background-color: #f5f6f8;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05), 0 10px 25px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.result-page  .subjects-grades .subject .subject-grade{
+    width: 95px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    background-color: #45ab9c;    /* لون افتراضي */
+    max-height: fit-content;
+    padding-bottom: 40px;
+    font-size: 24px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background: 
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.1),
+            rgba(255,255,255,0.08) 30%,
+            rgba(0,0,0,0.12)
+        ),
+        linear-gradient(
+            325deg,
+            rgba(255,255,255,0.1),
+            rgba(255,255,255,0.08) 30%,
+            rgba(0,0,0,0.12)
+        );
+}
+.result-page  .subjects-grades .subject .subject-grade * {
+    padding: 10px;
+    font-weight: 700;
+}
+.result-page  .subjects-grades .subject .subject-grade .grade-letter{
+    color: #f0f4fd;
+    direction: ltr;
+}
+.result-page  .subjects-grades .subject .subject-grade .grade-score{
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    background-color: #f0f4fd;
+    color: #45ab9c;  /* لون افتراضي */
+}
+.result-page  .subjects-grades .subject .subject-details{
+    margin-right: 10px;
+}
+.result-page  .subjects-grades .subject .subject-details h4{
+    margin-bottom: 5px;
+}
+.result-page  .subjects-grades .subject .subject-details p{
+    font-size: 14px;
+    padding: 5px 0;
+    color: #65687c;
+}
+@media  (max-width: 425px) {
+    .result-page  .subjects-grades .subject{
+        padding: 10px ;
+        margin-top: 15px;
+    }
+    .result-page  .subjects-grades .subject .subject-grade{
+        font-size: 18px;
+        width: 75px;
+        padding-bottom: 40px;
+        max-height: fit-content;
+    }
+    .result-page  .subjects-grades .subject .subject-grade * {
+        padding: 8px;
+    }
+    .result-page  .subjects-grades .subject .subject-details h4{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .result-page  .subjects-grades .subject .subject-details p{
+        font-size: 12px;
+        padding: 5px 0;
+    }
+    .result-page  .subjects-grades .subject .subject-grade .grade-score{
+        min-width: 35px;
+    }
+}
+@media  (min-width: 425px) {
+    .result-page  .subjects-grades .subject .subject-grade .grade-score{
+        min-width: 46px;
+    }
+}
+/* تنسيقات لون معدل المادة الفردي */
+/* لون معدل المادة العالي */
+.result-page  .subjects-grades .subject .subject-grade.high-grade {
+    background-color: #45ab9c;
+}
+.result-page  .subjects-grades .subject .subject-grade.high-grade .grade-score{
+    color: #45ab9c;
+}
+/* لون معدل المادة المتوسط */
+.result-page  .subjects-grades .subject .subject-grade.medium-grade {
+    /* background-color: #c4a34c; */
+    background-color: #e8bf4b;
+}
+.result-page  .subjects-grades .subject .subject-grade.medium-grade .grade-score{
+    color: #e8bf4b;
+}
+/* لون معدل المادة المنخفض */
+.result-page  .subjects-grades .subject .subject-grade.low-grade{
+    background-color: #ab4545;
+}
+.result-page  .subjects-grades .subject .subject-grade.low-grade .grade-score{
+    color: #ab4545;
+}
+/* نهاية تنسيقات لون معدل المادة الفردي */
+.result-page  .download-section{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f6f7fc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4), 0 10px 25px rgba(0,0,0,0.1);
+}
+.result-page  .download-section a{    
+    color: #65687c;
+}
+.result-page  .download-section a:hover {    
+    color: rgb(76, 68, 179);
+}
+/* ============================ Print Result Page ================================================= */
+/* الجدول يظهر فقط في نافذة الطباعة */
+.result-page  .print-table {
+    display: none;
+}
+@page{
+  size: A4;
+  margin: 15mm;
+}
+@media print {
+    .result-page  .subjects-grades , .my_signature , .download-section {
+        display: none;
+    }
+    .result-page .print-table {
+        background-color: #f5f6f8;
+        margin: 30px auto;
+        display:block;
+    }
+    .print-table{
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .print-table th,
+    .print-table td{
+        border: 1px solid #606060;
+        padding: 6px 6px;
+        text-align: center;
+    }
+    .print-table th{
+        background: #c4c4c4;
+        font-weight: bold;
+    }
+    .print-table td.sub-name{
+        text-align: right;
+    }
+    .print-table .sub-number{width:5%;}
+    .print-table .sub-name{width:40%;}
+    .print-table .sub-units{width:10%;}
+    .print-table .sub-score{width:12%;}
+    .print-table .sub-grade{width:10%;}
+    .print-table .sub-factor{width:10%;}
+}
+/* ============================ Side Pages ================================================= */
+.side-page{
+    background-color: #eae9f7;
+    text-align: center;
+}
+.side-page .container{
+    background-color: #f5f3fe;
+    margin: 30px auto;
+    max-width: 90%;
+    padding: 20px 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: slideUpFade 0.6s ease-out;
+}
+@keyframes slideUpFade {
+    from{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width:400px) {
+    .side-page .container{
+        padding: 20px;
+    }
+}
+@media (min-width:600px) {
+    .side-page .container{
+        max-width: 550px;
+    }
+}
+.side-page .logo {
+    width: 80px;
+    margin: 0 auto;
+    opacity: 0.9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.side-page .logo img {
+    max-width: 100%;
+}
+@media (max-width:400px) {
+    .side-page .logo {
+    width: 60px;
+    }
+}
+.side-page .image  {
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.side-page .image img {
+    max-width: 100%;
+}
+.side-page h1 {
+    color: #141a52;
+}
+.side-page p {
+    color: #626282;
+    font-size: 18px;
+    line-height: 1.5;
+}
+@media (max-width:400px) {
+    .side-page h1 {
+        font-size: 24px;
+    }
+    .side-page p {
+        font-size: 14px;
+    }
+}
+.side-page .note {
+    max-width: 350px;
+    margin: 20px auto;
+    background-color: #fffff4;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.side-page .note i {
+    margin-left:10px ;
+    color: #f9b947;
+    font-size: 26px;
+}
+.side-page .note p {
+    text-align: right;
+    font-size: 16px;
+    color: #69594a;
+}
+.side-page a {
+    display: block;
+    width: fit-content;
+    background-image: linear-gradient(to right, #5C258D 0%, #4389A2 51%, #5C258D 100%);
+    color: #fcfcfe;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 20px auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    outline: none;
+    font-size: 20px;
+}
+@media (max-width:400px) {
+    .side-page .note i {
+        font-size: 21px;
+    }
+    .side-page .note p {
+        font-size: 14px;
+    }
+    .side-page a {
+        font-size: 16px;
+    }
+}
+.side-page a:hover {
+  background-position: right center;
+  color: #fff;
+}
+.side-page a:active{ 
+    transform: translateY(3px) scale(0.96);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    -webkit-transform: translateY(3px) scale(0.96);
+    -moz-transform: translateY(3px) scale(0.96);
+    -ms-transform: translateY(3px) scale(0.96);
+    -o-transform: translateY(3px) scale(0.96);
+}
+.side-page a i {
+    margin-right: 5px;
+}
+.side-page span {
+    display: block;
+    color: #626282;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+}
+/* ============================ Animation ================================================= */
+@keyframes slideUpFade {
+    from{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

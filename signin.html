@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="النتيجة الدراسية لطلاب الجامعة المتحدة الليبية الأوروبية">
+    <title>نتيجة الفصل الدراسي</title>
+
+    <!-- ملفات css -->
+    <link rel="stylesheet" href="/css/normalize.css">                                 <!-- Render All Element Normally -->
+    <link rel="stylesheet" href="/css/style.css">                                     <!-- my main style file          -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome Icons File     -->
+
+    <!--   ايقونة الموقع  -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32.png"> <!--   ايقونة الموقع للمتصفحات العادية -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo180.png"> <!--   ايقونة الموقع لمتصفحات الايفون -->
+
+    <!-- الخطوط المستخدمة بالتصميم -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+
+</head>
+<body class="signin-page">
+    <div class="container">
+        <header>
+            <div class="image">
+                <img src="/images/logo180.png" alt="لوجو الجامعة" >
+            </div>
+        </header>
+        <div class="sign-card">
+            <h1>استخراج نتيجة الطالب</h1>
+            <p>العام الدراسي 2025-2026</p>
+            <p>الفصل: الخريف</p>
+            <form action="/result_page.html" method="GET">
+                <div class="idfield">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="student_id" id="student_id" placeholder="الرقم الدراسي" required> 
+                </div>
+                <button type="submit">تسجيل الدخول</button> 
+            </form>
+
+            <div class="views" style="display: none;" > <!-- لو تبي تدير عداد المشاهدين للموقع حول الستايل بس لا تحذف الكلاس -->
+                <i class="fa-solid fa-eye"></i> 
+                <span>13231</span> <!-- حط عدد المشاهدين هنا-->
+            </div>
+            
+        </div>
+        <a href="https://t.me/Al_SAOUR" class="my_signature">Developed by M.AlSAOUR</a>
+    </div>
+</body>
+</html>
